@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<data>
+	<module name="Wayland">
+		 <application name="Start Wayland">
+		                <command>demos/waylandDemos/startWayland.exc &amp;</command>
+		                <route>startWayland</route>
+				<description> Makes necesary changes to start wayland correctly. Please click only Once</description>
+		 </application>
+
+		<application name="Qt5 Custom Geometry Demo On wayland">
+		                <command>demos/qtdemos/customgeometry/customgeometry -platform wayland-egl &amp;</command>
+		                <route>customgeometry</route>
+				<description> The custom geometry example shows how to create a QQuickItem which uses the scene graph API to build a custom geometry for the scene graph. It does this by creating a BezierCurve item which is made part of the CustomGeometry module and makes use of this in a QML file.</description>
+		 </application>
+
+		<application name="Qt5 hellowindow demo On wayland">
+		                <command>demos/qtdemos/hellowindow/hellowindow -platform wayland-egl &amp;</command>
+		                <route>hellowindow</route>
+				<description>Qt demo Hello window shows 3 qt logos running in separate windows, for this it is required a windowing system such as wayland, if not present then it will show the 3 logos at the same time.</description>
+		 </application>
+		<application name="Qt5 opengl under qml demo On wayland">
+		                <command>demos/qtdemos/openglunderqml/openglunderqml -platform wayland-egl &amp;</command>
+		                <route>underqml</route>
+				<description> The OpenGL under QML example shows how an application can make use
+    of the \l QQuickWindow::beforeRendering() signal to draw custom
+    OpenGL content under a Qt Quick scene. This signal is emitted at
+    the start of every frame, before the scene graph starts its
+    rendering, thus any OpenGL draw calls that are made as a response
+    to this signal, will stack under the Qt Quick items</description>
+		 </application>
+		<application name="Qt5 shader effects On wayland">
+		                <command>demos/qtdemos/shadereffects/shadereffects -platform wayland-egl &amp;</command>
+		                <route>shadereffects</route>
+				<description> This example demonstrates a couple of visual effects that you can perform
+    with shaders in QtQuick 2.0
+
+    ShaderEffects typically operate on other types, using a ShaderEffectSource
+    \snippet quick/shadereffects/shadereffects.qml source
+    In the above snippet, theItem is the id of a complex QML object in the file.</description>
+		 </application>
+		<application name="Qt5 simple material On wayland">
+		                <command>demos/qtdemos/simplematerial/simplematerial -platform wayland-egl &amp;</command>
+		                <route>simplematerial</route>
+				<description>In this example, we will make use of the \l
+    QSGSimpleMaterialShader class to fill a shape in the scene
+    graph. This is a convenience class intended to avoid a lot of the
+    boilerplate code required when creating materials with the \l
+    QSGMaterial, \l QSGMaterialShader and \l QSGMaterialType classes
+    directly.
+
+    A simple material consists of two parts, the material state and
+    the material shader. The material shader has one instance per
+    scene graph and contains the actual OpenGL shader program and
+    information about which attributes and uniforms it uses. The
+    material state is what we assign to each individual node, in this
+    case to give them different colors.</description>
+		 </application>
+		<application name="Qt5 texture in sgnode On wayland">
+		                <command>demos/qtdemos/textureinsgnode/textureinsgnode -platform wayland-egl &amp;</command>
+		                <route>textureinsgnode</route>
+				<description>Qt demo showing a qml element as texture, brief Shows how to use FramebufferObjects with Qt Quick.</description>
+		 </application>
+
+	</module>
+</data>
