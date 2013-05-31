@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+cd /usr/lib
+
+
+ln -sf libEGL-fb.so libEGL.so
+ln -sf libEGL-fb.so libEGL.so.1
+
+
+ln -sf libGAL-fb.so libGAL.so
+
+cd -
+
+
+
+
